@@ -1,0 +1,33 @@
+{
+    "chamado": {
+        "name": "Chamado A",
+        "number": "",
+        "status": "",
+        "filial": "",
+        "number_equipamento": "",
+        "problema": "",
+        "solução": "",
+        "dt_abertura": "",
+        "dt_conclusao": ""
+    },
+    "funcionario": {
+        "nome": "José",
+        "matricula": 1020304056,
+        "filialID": 2
+    },
+    "filial": {
+        "id": 2,
+        "nome": "Marata",
+        "endereço": "Brasil, SE, Lagarto, Cidade Nova, 69"
+    },
+    "tecnico": {
+        "id": 3,
+        "nome": "ureia seca",
+        "qtd_chamadas_resolvidas": 0
+    },
+    "equipamento": {
+        "n_identificacao": 40109196,
+        "tipo": "",
+        "dt_instalacao": ""
+    }
+}
