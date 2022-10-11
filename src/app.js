@@ -49,20 +49,12 @@ app.get('/q3', (req, res) => {
 Quais foram os técnicos do HelpDesk que mais atenderam chamados em cada mês do
 ano corrente (nome do técnico e quantidade de chamados atendidos com conclusão);
 */
-app.get('/q4', (req, res) => { });
+app.get('/q4', (req, res) => {
+
+});
 
 /* Questão 5 
 Dado um determinado chamado, qual a solução dada para o mesmo.
-*/
-
-app.get('/q5/:idchamado', (req, res) => {
-  const { idchamado } = req.params;
-  const chamado = chamados.find(chamado => chamado._id === parseInt(idchamado));
-  if (chamado) {
-    Boolean(chamado.solution)
-      ? res.status(200).json({ solucao: chamado.solution })
-      : res.status(400).json({ error: true, message: "O chamado ainda não possui solução" });
-  } else res.status(404).json({ error: true, message: "Chamado não encontrado." });
-});
+ */
 
 app.listen(PORT, () => console.log(`Running on PORT: ${PORT}`));
