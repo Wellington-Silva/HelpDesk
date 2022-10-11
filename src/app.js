@@ -13,7 +13,7 @@ Quais são os chamados em aberto, identificando: número do chamado, data, filia
 do equipamento envolvido e problema informado pela filial;
 */
 function chamado() {
-    console.log(x.user.name)
+  console.log(x.user.name)
 }
 
 /* Questão 2 
@@ -22,7 +22,7 @@ endereço da filial e seus equipamentos (número do equipamento, tipo de equipam
 e data de instalação na filial;
 */
 function equipamentos_existentes() {
-    console.log(x.equipamento)
+  console.log(x.equipamento)
 }
 
 
@@ -38,6 +38,16 @@ ano corrente (nome do técnico e quantidade de chamados atendidos com conclusão
 
 /* Questão 5 
 Dado um determinado chamado, qual a solução dada para o mesmo.
- */
+*/
+
+app.get('/q5/:idchamado', (req, res) => {
+  const { idchamado } = req.params;
+  const chamado = chamados.find(chamado => chamado._id === parseInt(idchamado));
+  if (chamado) {
+    Boolean(chamado.solution)
+      ? res.status(200).json({ solucao: chamado.solution })
+      : res.status(400).json({ error: true, message: "O chamado ainda não possui solução" });
+  } else res.status(404).json({ error: true, message: "Chamado não encontrado." });
+});
 
 app.listen(PORT, () => console.log(`Running on PORT: ${PORT}`));
