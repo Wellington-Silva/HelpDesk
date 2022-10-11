@@ -193,13 +193,13 @@
     },
     {
       "_id": 3,
-      "filial_id": 1,
-      "type": "microcomputador,",
+      "filial_id": 2,
+      "type": "microcomputador",
       "dt_installation": "10/10/2022"
     },
     {
       "_id": 4,
-      "filial_id": 1,
+      "filial_id": 3,
       "type": "scanner",
       "dt_installation": "10/10/2022"
     }
