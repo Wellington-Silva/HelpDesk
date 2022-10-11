@@ -1,10 +1,11 @@
-const x = require('./data.json');
+const { chamados, funcionarios, filiais, tecnicos, equipamentos } = require('./data.json');
+console.warn(funcionarios);
 
 /* Questão 1 
 Quais são os chamados em aberto, identificando: número do chamado, data, filial chamadora, número identificador 
 do equipamento envolvido e problema informado pela filial;
 */
-function chamados() {
+function chamado() {
     console.log(x.user.name)
 }
 
