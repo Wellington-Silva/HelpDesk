@@ -16,22 +16,22 @@
       "name": "Chamado 2",
       "filial_id": 1,
       "equipment_id": 1,
-      "status": "aberto",
-      "solution": "",
+      "status": "Fechado",
+      "solution": "PC fora da tomada",
       "problem": "PC não liga.",
       "dt_start": "10/10/2022",
-      "dt_end": ""
+      "dt_end": "11/10/2022"
     },
     {
       "_id": 2,
       "name": "Chamado 2",
       "filial_id": 1,
       "equipment_id": 1,
-      "status": "aberto",
-      "solution": "",
+      "status": "fechado",
+      "solution": "PC fora da tomada",
       "problem": "PC não liga.",
       "dt_start": "10/10/2022",
-      "dt_end": ""
+      "dt_end": "11/10/2022"
     },
     {
       "_id": 2,
@@ -56,15 +56,33 @@
       "dt_end": ""
     }
   ],
-
   "funcionarios": [
-    { "_id": 1, "name": "José Silva", "filial_id": 2 },
-    { "_id": 2, "name": "José", "filialID": 2 },
-    { "_id": 3, "name": "José", "filialID": 2 },
-    { "_id": 4, "name": "José", "filialID": 2 },
-    { "_id": 5, "name": "José", "filialID": 2 }
+    {
+      "_id": 1,
+      "name": "José Silva",
+      "filial_id": 2
+    },
+    {
+      "_id": 2,
+      "name": "José",
+      "filialID": 2
+    },
+    {
+      "_id": 3,
+      "name": "José",
+      "filialID": 2
+    },
+    {
+      "_id": 4,
+      "name": "José",
+      "filialID": 2
+    },
+    {
+      "_id": 5,
+      "name": "José",
+      "filialID": 2
+    }
   ],
-
   "filiais": [
     {
       "_id": 1,
@@ -82,49 +100,84 @@
       "address": "Brasil, SE, Lagarto, Cidade Nova, 69"
     }
   ],
-
   "tecnicos": [
     {
       "_id": 1,
       "name": "Walter Whilte",
       "resolved_calls": 0,
       "calls_resolved_month": {
-        "jan": 0, "fev": 0, "mar": 0, "abr": 0, "mai": 0, "jun": 0, 
-        "jul": 0, "ago": 0, "set": 0, "out": 0, "nov": 0, "dez": 0
+        "jan": 0,
+        "fev": 0,
+        "mar": 0,
+        "abr": 0,
+        "mai": 0,
+        "jun": 0,
+        "jul": 0,
+        "ago": 0,
+        "set": 0,
+        "out": 0,
+        "nov": 0,
+        "dez": 0
       }
     },
-
     {
       "_id": 2,
       "name": "Yusuke Urameshi",
       "resolved_calls": 0,
       "calls_resolved_month": {
-        "jan": 0, "fev": 0, "mar": 0, "abr": 0, "mai": 0, "jun": 0, 
-        "jul": 0, "ago": 0, "set": 0, "out": 0, "nov": 0, "dez": 0
+        "jan": 0,
+        "fev": 0,
+        "mar": 0,
+        "abr": 0,
+        "mai": 0,
+        "jun": 0,
+        "jul": 0,
+        "ago": 0,
+        "set": 0,
+        "out": 0,
+        "nov": 0,
+        "dez": 0
       }
     },
-
     {
       "_id": 3,
       "name": "Daenerys Targaryen",
       "resolved_calls": 0,
       "calls_resolved_month": {
-        "jan": 0, "fev": 0, "mar": 0, "abr": 0, "mai": 0, "jun": 0, 
-        "jul": 0, "ago": 0, "set": 0, "out": 0, "nov": 0, "dez": 0
+        "jan": 0,
+        "fev": 0,
+        "mar": 0,
+        "abr": 0,
+        "mai": 0,
+        "jun": 0,
+        "jul": 0,
+        "ago": 0,
+        "set": 0,
+        "out": 0,
+        "nov": 0,
+        "dez": 0
       }
     },
-
     {
       "_id": 4,
       "name": "Mikasa Ackerman",
       "resolved_calls": 0,
       "calls_resolved_month": {
-        "jan": 0, "fev": 0, "mar": 0, "abr": 0, "mai": 0, "jun": 0, 
-        "jul": 0, "ago": 0, "set": 0, "out": 0, "nov": 0, "dez": 0
+        "jan": 0,
+        "fev": 0,
+        "mar": 0,
+        "abr": 0,
+        "mai": 0,
+        "jun": 0,
+        "jul": 0,
+        "ago": 0,
+        "set": 0,
+        "out": 0,
+        "nov": 0,
+        "dez": 0
       }
     }
   ],
-
   "equipamentos": [
     {
       "_id": 1,
@@ -132,21 +185,18 @@
       "type": "Impressora",
       "dt_installation": "10/10/2022"
     },
-
     {
       "_id": 2,
       "filial_id": 1,
       "type": "Monitor",
       "dt_installation": "10/10/2022"
     },
-
     {
       "_id": 3,
       "filial_id": 1,
       "type": "microcomputador,",
       "dt_installation": "10/10/2022"
     },
-
     {
       "_id": 4,
       "filial_id": 1,
