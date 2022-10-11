@@ -1,5 +1,12 @@
-const { chamados, funcionarios, filiais, tecnicos, equipamentos } = require('./data.json');
-console.warn(funcionarios);
+const express = require('express');
+const app = express();
+const PORT = 3000;
+
+const { chamados, funcionarios, filiais, tecnicos, equipamentos } = require('./data/data.json');
+
+app.get('/', (req, res) => res.send('Hello World!'));
+
+app.get('/test', (req, res) => res.json(filiais));
 
 /* Questão 1 
 Quais são os chamados em aberto, identificando: número do chamado, data, filial chamadora, número identificador 
@@ -32,3 +39,5 @@ ano corrente (nome do técnico e quantidade de chamados atendidos com conclusão
 /* Questão 5 
 Dado um determinado chamado, qual a solução dada para o mesmo.
  */
+
+app.listen(PORT, () => console.log(`Running on PORT: ${PORT}`));
