@@ -59,7 +59,59 @@ Quais foram os técnicos do HelpDesk que mais atenderam chamados em cada mês do
 ano corrente (nome do técnico e quantidade de chamados atendidos com conclusão);
 */
 app.get('/q4', (req, res) => {
+  let resultado = {
+    jan: { nome: "", qtd: 0 },
+    fev: { nome: "", qtd: 0 },
+    mar: { nome: "", qtd: 0 },
+    abr: { nome: "", qtd: 0 },
+    mai: { nome: "", qtd: 0 },
+    jun: { nome: "", qtd: 0 },
+    jul: { nome: "", qtd: 0 },
+    ago: { nome: "", qtd: 0 },
+    set: { nome: "", qtd: 0 },
+    out: { nome: "", qtd: 0 },
+    nov: { nome: "", qtd: 0 },
+    dez: { nome: "", qtd: 0 },
+  };
 
+  tecnicos.map((t, i) => {
+    if (t.calls_resolved_month.jan > resultado.jan.qtd)
+      resultado = { ...resultado, jan: { nome: t.name, qtd: t.calls_resolved_month.jan } }
+
+    if (t.calls_resolved_month.fev > resultado.fev.qtd)
+      resultado = { ...resultado, fev: { nome: t.name, qtd: t.calls_resolved_month.fev } }
+
+    if (t.calls_resolved_month.mar > resultado.mar.qtd)
+      resultado = { ...resultado, mar: { nome: t.name, qtd: t.calls_resolved_month.mar } }
+
+    if (t.calls_resolved_month.abr > resultado.abr.qtd)
+      resultado = { ...resultado, abr: { nome: t.name, qtd: t.calls_resolved_month.abr } }
+
+    if (t.calls_resolved_month.mai > resultado.mai.qtd)
+      resultado = { ...resultado, mai: { nome: t.name, qtd: t.calls_resolved_month.mai } }
+
+    if (t.calls_resolved_month.jun > resultado.jun.qtd)
+      resultado = { ...resultado, jun: { nome: t.name, qtd: t.calls_resolved_month.jun } }
+
+    if (t.calls_resolved_month.jul > resultado.jul.qtd)
+      resultado = { ...resultado, jul: { nome: t.name, qtd: t.calls_resolved_month.jul } }
+
+    if (t.calls_resolved_month.ago > resultado.ago.qtd)
+      resultado = { ...resultado, ago: { nome: t.name, qtd: t.calls_resolved_month.ago } }
+
+    if (t.calls_resolved_month.set > resultado.set.qtd)
+      resultado = { ...resultado, set: { nome: t.name, qtd: t.calls_resolved_month.set } }
+
+    if (t.calls_resolved_month.out > resultado.out.qtd)
+      resultado = { ...resultado, out: { nome: t.name, qtd: t.calls_resolved_month.out } }
+
+    if (t.calls_resolved_month.nov > resultado.nov.qtd)
+      resultado = { ...resultado, nov: { nome: t.name, qtd: t.calls_resolved_month.nov } }
+
+    if (t.calls_resolved_month.dez > resultado.dez.qtd)
+      resultado = { ...resultado, dez: { nome: t.name, qtd: t.calls_resolved_month.dez } }
+  });
+  res.status(200).json(resultado);
 });
 
 /* Questão 5 
