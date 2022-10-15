@@ -3,7 +3,10 @@ Atividade da matéria de Programação para dispositivos móveis.
 Grupo: Caio Almeida dos Reis, Jadson Andrade de Oliveira e Wellington Carvalho da Silva  
 
 # Como executar
-Para conseguir rodar é necessário instalar o nodejs e logo após executar os comandos:  
+Para conseguir rodar é necessário instalar o nodejs. Ele está disponível no link:  
+- https://nodejs.org/en/ na versão LTS  
+
+E logo após executar os comandos:  
 - npm install
 - npm start
 
@@ -21,4 +24,5 @@ localhost:3000/q3
 localhost:3000/q4
 
 - Para ver a resolução da questão **5** basta ir no navegador e digitar:  
-localhost:3000/q5  
+localhost:3000/q5/idchamado 
+idchamdo é o ID do chamado que está desejando ver a solução  

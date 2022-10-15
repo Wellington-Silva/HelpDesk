@@ -2,9 +2,13 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
-const { chamados, funcionarios, filiais, tecnicos, equipamentos } = require('./data/data.json');
-
-app.get('/', (req, res) => res.send('Hello World!'));
+const {
+  chamados,
+  funcionarios,
+  filiais,
+  tecnicos,
+  equipamentos
+} = require('./data/data.json');
 
 app.get('/test', (req, res) => res.json(filiais));
 
